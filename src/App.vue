@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header title="title"/>
-    <MoviesList/>
+    <Header :title="title"/>
+    <router-view/>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   name: "app",
   data() {
     return {
-      title: "Vue Test"
+      title: "MovieDB"
     };
   },
   components: {
@@ -29,6 +29,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #222;
 }
 
 *,

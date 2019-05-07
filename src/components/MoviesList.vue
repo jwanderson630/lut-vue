@@ -36,4 +36,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ul {
+  list-style: none;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  li {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+}
 </style>
